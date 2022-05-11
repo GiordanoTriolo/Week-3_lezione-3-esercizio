@@ -21,29 +21,31 @@ function invia(){
 function sottrazione(){
     let num1= document.getElementById('number1').value;
     let num2= document.getElementById('number2').value;
-    let r= num1-num2;
+    let r= (+num1)-(+num2);
     document.getElementById('result').innerHTML = r;
 }
 
 function somma(){
     let num1= document.getElementById('number1').value;
     let num2= document.getElementById('number2').value;
-    num1= parseInt(num1);
-    num2= parseInt(num2);
-    let r= num1+num2;
+    let r= (+num1)+(+num2);
     document.getElementById('result').innerHTML = r;
 }
 
 function moltiplicazione(){
     let num1= document.getElementById('number1').value;
     let num2= document.getElementById('number2').value;
-    let r= num1*num2;
+    let r= (+num1)*(num2);
     document.getElementById('result').innerHTML = r;   
 }
 
 function divisione(){
     let num1= document.getElementById('number1').value;
     let num2= document.getElementById('number2').value;
-    let r= num1/num2;
+    if(num2!=0){
+        var r= (+num1)/(+num2);
+    } else {
+        var r= 'Errore, divisione per 0!';
+    }
     document.getElementById('result').innerHTML = r;
 }
