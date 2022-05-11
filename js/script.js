@@ -7,9 +7,9 @@ function invia(){
 
     dato= document.getElementById('age').value;
     document.getElementById('agespan').innerHTML = dato;
-    let quantomanca= 70-dato;
-    if( quantomanca>=1){
-        document.getElementById('retirespan').innerHTML = quantomanca+', non puoi ancora andare in pensione';
+    dato= 70-dato;
+    if( dato>=1){
+        document.getElementById('retirespan').innerHTML = dato+', non puoi ancora andare in pensione';
     } else{
         document.getElementById('retirespan2').innerHTML ='Complimenti, puoi già andare in pensione!';
     }
