@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="form">
+        <input type="text" id="name" placeholder="Inserisci il tuo nome">
+        <input type="text" id="surname" placeholder="Inserisci il tuo cognome">
+        <input type="number" id="age" placeholder="Inserisci la tua età">
+        <input type="text" id="city" placeholder="Inserisci la città dove vivi">
+        <button type="button" onclick="invia()">Conferma i tuoi dati</button>
+    </div>
+
+    <div class="dati">
+        <h1>I tuoi dati</h1>
+        <p><b>Nome: </b><span id="namespan"></span></p>
+        <p><b>Cognome: </b><span id="surnamespan"></span></p>
+        <p><b>Età: </b><span id="agespan"></span></p>
+        <p><b>Città: </b><span id="cityspan"></span></p>
+        <p><b>Pensione tra: </b><span id="retirespan"></span><span id="retirespan2"></span></p>
+    </div>
+
+    <div class="calculator">
+        <h2>Calcolatrice</h2>
+        <input type="number" id="number1" placeholder="Inserisci un numero">
+        <input type="number" id="number2" placeholder="Inserisci un numero">
+        <button type="button" onclick="somma()">+</button>
+        <button type="button" onclick="sottrazione()">-</button>
+        <button type="button" onclick="moltiplicazione()">x</button>
+        <button type="button" onclick="divisione()">/</button>
+        <p><b>Risultato: </b><span id="result"></span></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
